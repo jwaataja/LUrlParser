@@ -31,3 +31,21 @@ Usage example:
 	}
 
 =============================
+
+To use the library in your project, the easiest way is to add it as a git
+submodule. In the project root directory, run
+```bash
+git submodule add https://github.com/jwaataja/LUrlParser.git extern/LUrlParser
+```
+
+Then, in your `CMakeLists.txt` file, add
+```cmake
+add_subdirectory(${PROJECT_SOURCE_DIR}/extern/LUrlParser)
+```
+
+You can then link against the library with
+```cmake
+target_link_libraries(my_target PRIVATE LUrlParser)
+```
+
+=============================
