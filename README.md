@@ -16,6 +16,8 @@ A tiny and lightweight URL & URI parser (RFC 1738, RFC 3986) written in C++.
 
 Usage example:
 
+	#include "LUrlParser.h"
+	
 	const auto URL = LUrlParser::ParseURL::parseURL( "https://John:Dow@github.com:80/corporateshark/LUrlParser" );
 
 	if ( URL.isValid() )
